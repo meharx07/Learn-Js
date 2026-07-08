@@ -15,3 +15,19 @@ accountCity = "Sargodha"
 // assign a location in memory to store 
 
 // constants are values that cannot be changed for eaxple a value of pie cannt be change lets tr to change every thing
+
+// accountId = 2 // not allowed
+// now you have maded a change but remember someone is analyzing a the code yes node js lets check
+// console.log(accountId); // error
+// lets make a changes in others and see
+
+accountEmail = "abdullah.meharx07@gmail.com"
+accountPassword = 43256
+accountCity = "London"
+
+// now here is another method of console.log using table and [] brackets inside
+
+// console.table([accountEmail, accountPassword, accountCity])
+
+// now lets take things above now
+// as we can see we can chage the values of let and var then dont only use var orr in accountCity we didnt use let or var then how is it printing?
