@@ -1,33 +1,48 @@
-// in javascript datat ypes are divided in two categories
-// primitive types and non-primitive types
-// the difference in these two are how they are stored in memory and how to accecc them
+"use strict";
 
-// there are 7 Primitive types
-let name = "Mehar Abdullah"                        // String
-let age = 18                                       // Number
-let isLoggedIn = false                             // boolean
-let city = undefined                               // undefined
-let temperature = null                             // null
-let bigNumber = 238719283719238127391823719283n    // bigInt
-let sym = Symbol('Id')                             // Symbol
+// In JavaScript, data types are divided into two primary categories:
+// 1. Primitive Types
+// 2. Non-Primitive (Reference) Types
+//
+// The core difference between them lies in how they are stored in memory and how they are accessed.
 
-// primitive types are call by value means when we copy them from one place to another there reference of
-// memory is not share are given as copy and the things we change are only maded in copy
+// --- 1. The 7 Primitive Types ---
+// Primitives are immutable and are stored directly in Stack memory. 
+// They are "call by value", meaning when you assign or copy them to another variable, 
+// JavaScript passes a completely independent copy of the value, not a link to the original data.
+// Any changes made to the new variable happen only within that copy.
 
-// in non-primitive types we have
-// Arrays, Objects and functions
+let name = "Mehar Abdullah";                        // String
+let age = 18;                                       // Number
+let isLoggedIn = false;                             // Boolean
+let city = undefined;                               // Undefined
+let temperature = null;                             // Null
+let bigNumber = 238719283719238127391823719283n;    // BigInt
+let sym = Symbol('Id');                             // Symbol
+
+// --- 2. Non-Primitive (Reference) Types ---
+// Non-primitives are mutable and are stored in Heap memory. 
+// When you declare a non-primitive, the actual data is kept in the Heap, while a reference 
+// (or memory address pointer) is stored in the Stack.
+// They are "call by reference", meaning if you copy an object or array to a new variable, 
+// both variables point to the exact same location in the Heap. Changing one will change the other!
 
 // Arrays
-const heros = ["Batman", "Superman", "Aquaman"]
+const heroes = ["Batman", "Superman", "Aquaman"];
 
 // Objects
 const user = {
     name: "Mehar Abdullah",
     age: 18,
     isLoggedIn: false
-}
+};
 
-const greet = function(name){
+// Functions
+const greet = function(name) {
     console.log(`Hello ${name}`);
-}
-greet("Mehar Abdullah")
+};
+
+// Invoking the function
+greet("Mehar Abdullah");
+
+// We will study each non-primitive type in full detail later.
